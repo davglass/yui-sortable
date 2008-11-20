@@ -1,0 +1,52 @@
+#droplist ul, #droplist2 ul {
+    list-style-type: disc;
+    margin: 5px 20px;
+}
+#droplist li, #droplist2 li {
+    border: 1px solid white;
+    cursor: move;
+}
+p {
+    margin: 2em;
+}
+#davdoc {
+    position: relative;
+}
+#droplist, #droplist2 {
+    margin: 1em;
+    border: 1px solid black;
+    width: 150px;
+    padding: 1em;
+    float: left;
+}
+#droplist2 {
+    float: right;
+}
+
+h2 {
+    margin-top: 2px;
+}
+
+#sortList li, #sortList2 li {
+    border: 1px solid white;
+    background-color: white;
+}
+
+#sortList .yui-sortover, #sortList2 .yui-sortover {
+    border: 1px solid red;
+}
+
+#dropList3 {
+    border: 1px solid black;
+    zoom: 1;
+}
+#dropList3:after { display: block; clear: both; visibility: hidden; content: '.'; height: 0;}
+#dropList3 div {
+    border: 1px solid black;
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: .5em;
+}
+
