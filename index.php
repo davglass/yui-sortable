@@ -110,9 +110,8 @@ YAHOO.util.Event.addListener(window, 'load', init);
 </div>
     </textarea>
 </div>
-<script type="text/javascript" src="http://yui.yahooapis.com/2.2.0/build/utilities/utilities.js"></script> 
-<script type="text/javascript" src="../js/tools-min.js"></script>
-<script type="text/javascript" src="../js/effects-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.6.0/build/utilities/utilities.js"></script> 
+<script type="text/javascript" src="../js/toolseffects-min.js"></script>
 <script src="http://us.js2.yimg.com/us.js.yimg.com/i/ydn/yuiweb/js/dpsyntax-min-2.js"></script>
 <script type="text/javascript" src="../js/davglass.js"></script>
 
@@ -137,5 +136,4 @@ YAHOO.util.Event.addListener(window, 'load', init);
 </script>
 </body>
 </html>
-<?php @include_once($_SERVER["DOCUMENT_ROOT"]."/wp-content/plugins/shortstat/inc.stats.php"); ?>
 
