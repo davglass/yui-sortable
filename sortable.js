@@ -1,13 +1,13 @@
 /**
  * @description Sortable Lists.
- * @module SortableLists
+ * @module sortablelists
  * @version 0.1
  * @namespace YAHOO.widget
  * @requires yahoo, dom, event
 */
 /**
  * @description Sortable Lists.
- * @class SortableList.
+ * @class SortableList
  * @param {String/HTMLElement} elm The element to convert into a sortable list
  */
 YAHOO.widget.SortableList = function(elm, cfg) {
