@@ -1,18 +1,15 @@
 /**
-* @fileoverview Sortable Lists.
-* @author Dav Glass <dav.glass@yahoo.com>
-* @version 0.1
-* @class Sortable DragDrop List.
-* @requires YAHOO
-* @requires YAHOO.util.Dom
-* @requires YAHOO.util.Event
-* @requires YAHOO.util.DragDrop
-* @requires YAHOO.Tools
-*
-* @constructor
-* @class Sortable List.
-* @param {String/HTMLElement} elm The element to convert into a sortable list
+ * @description Sortable Lists.
+ * @module SortableLists
+ * @version 0.1
+ * @namespace YAHOO.widget
+ * @requires yahoo, dom, event
 */
+/**
+ * @description Sortable Lists.
+ * @class SortableList.
+ * @param {String/HTMLElement} elm The element to convert into a sortable list
+ */
 YAHOO.widget.SortableList = function(elm, cfg) {
     this.elm = $(elm);
     this.drop = null;
@@ -36,12 +33,16 @@ YAHOO.widget.SortableList = function(elm, cfg) {
 }
 /**
 * The init function to make the list sortable
+* @method init
+* @private
 */
 YAHOO.widget.SortableList.prototype.init = function() {
     this._setupList();
     this.onInit.fire();
 }
 /**
+* Sets up the list
+* @method _setupList
 * @private
 */
 YAHOO.widget.SortableList.prototype._setupList = function() {
@@ -59,6 +60,8 @@ YAHOO.widget.SortableList.prototype._setupList = function() {
     }
 }
 /**
+* DragEnter event handler
+* @method onDragEnter
 * @private
 */
 YAHOO.widget.SortableList.prototype.onDragEnter = function(ev, id) {
@@ -78,6 +81,8 @@ YAHOO.widget.SortableList.prototype.onDragEnter = function(ev, id) {
     }
 }
 /**
+* onDragDrop Event handler
+* @method onDragDrop
 * @private
 */
 YAHOO.widget.SortableList.prototype.onDragDrop = function(ev, id) {
@@ -108,6 +113,8 @@ YAHOO.widget.SortableList.prototype.onDragDrop = function(ev, id) {
     }
 }
 /**
+* onDragOver Event handler
+* @method onDragOver
 * @private
 */
 YAHOO.widget.SortableList.prototype.onDragOver = function(ev, id) {
@@ -118,6 +125,8 @@ YAHOO.widget.SortableList.prototype.onDragOver = function(ev, id) {
     $D.addClass(id, 'yui-sortover');
 }
 /**
+* onMouseUp Event handler
+* @method onMouseUp
 * @private
 */
 YAHOO.widget.SortableList.prototype.onMouseUp = function(ev) {
